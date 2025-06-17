@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visual Analysis of Canadian Survey Data</title>
+        <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            color: #1a237e;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #283593;
+            margin-top: 40px;
+            border-left: 5px solid #3f51b5;
+            padding-left: 15px;
+        }
+        .intro-text {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .question-section {
+            margin-bottom: 50px;
+        }
+        blockquote {
+            background-color: #e8eaf6;
+            border-left: 5px solid #7986cb;
+            margin: 20px 0;
+            padding: 15px 20px;
+            font-style: italic;
+            color: #1a237e;
+            border-radius: 4px;
+        }
+        iframe {
+            width: 100%;
+            height: 750px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.9em;
+            color: #777;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Visual Analysis of Canadian Survey Responses</h1>
+            <p class="intro-text">
+                This dashboard presents a visual semantic analysis of open-ended survey questions. Each plot below is an interactive 3D space where individual text responses are clustered by meaning. Hover over points to see the original text, and use your mouse to rotate and zoom. The size of each point is proportional to the frequency of that exact response.
+            </p>
+            <!-- Section for Q5b_Text -->
+            <div class="question-section">
+                <h2>Question 5b: Reason for Connection to Canadian Identity</h2>
+                <blockquote>
+                    "Can you tell us why you feel [selected level of connection] to Canadian identity?"
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q5b_Text.html" title="Interactive 3D plot for Question 5b"></iframe>
+            </div>
+            <!-- Section for Q6_Text -->
+            <div class="question-section">
+                <h2>Question 6: One Word for "Canadian"</h2>
+                <blockquote>
+                    "What's one word that feels true – even if it's complicated – when you hear 'Canadian'?"
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q6_Text.html" title="Interactive 3D plot for Question 6"></iframe>
+            </div>
+            <!-- Section for Q7_Other -->
+            <div class="question-section">
+                <h2>Question 7 (Other): Crucial Values for Canada's Future</h2>
+                <blockquote>
+                    Context: "Which values do you believe are most crucial for Canada's future?"
+                    <br>
+                    <em>(This plot visualizes the 'Other' open-ended responses for this question.)</em>
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q7_Other.html" title="Interactive 3D plot for Question 7 Other"></iframe>
+            </div>
+            <!-- Section for Q8_Text -->
+            <div class="question-section">
+                <h2>Question 8: Canada's Best Surprise by 2030</h2>
+                <blockquote>
+                    "In one sentence: If Canada surprised you in the best way by 2030, what would it have done?"
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q8_Text.html" title="Interactive 3D plot for Question 8"></iframe>
+            </div>
+            <!-- Section for Q9_divisions_other -->
+            <div class="question-section">
+                <h2>Question 9 (Other): Divisions of Concern in Canada</h2>
+                <blockquote>
+                    Context: "Which divisions in Canada concern you most?"
+                    <br>
+                    <em>(This plot visualizes the 'Other' open-ended responses for this question.)</em>
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q9_divisions_other.html" title="Interactive 3D plot for Question 9 Other"></iframe>
+            </div>
+            <!-- Section for Q10_Other -->
+            <div class="question-section">
+                <h2>Question 10 (Other): What Builds Stronger Connections</h2>
+                <blockquote>
+                    Context: "What builds stronger connections between Canadians?"
+                    <br>
+                    <em>(This plot visualizes the 'Other' open-ended responses for this question.)</em>
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q10_Other.html" title="Interactive 3D plot for Question 10 Other"></iframe>
+            </div>
+            <!-- Section for Q11_Text -->
+            <div class="question-section">
+                <h2>Question 11: Canada's New Back-Cover Tagline</h2>
+                <blockquote>
+                    "If Canada's story was being rewritten, what would the tagline on the back cover say?"
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q11_Text.html" title="Interactive 3D plot for Question 11"></iframe>
+            </div>
+            <!-- Section for Q12_Future_hope -->
+            <div class="question-section">
+                <h2>Question 12: Biggest Hope for Canada's Future</h2>
+                <blockquote>
+                    "In one word, what's your biggest
+                    <strong>hope</strong>
+                    for Canada's future?"
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q12_Future_hope.html" title="Interactive 3D plot for Question 12"></iframe>
+            </div>
+            <!-- Section for Q13_Future_fear -->
+            <div class="question-section">
+                <h2>Question 13: Biggest Fear for Canada's Future</h2>
+                <blockquote>
+                    "In one word, what's your biggest
+                    <strong>fear</strong>
+                    for Canada's future?"
+                </blockquote>
+                <iframe src="tsne_visualizations_3d_silhouette_focus_sized/tsne_3d_silhouette_sized_Q13_Future_fear.html" title="Interactive 3D plot for Question 13"></iframe>
+            </div>
+            <footer>
+                <p>Generated by Prajwal Prashanth. Plots created using OpenAI Embeddings, t-SNE, K-Means, and Plotly.</p>
+            </footer>
+        </div>
+    </body>
+</html>
