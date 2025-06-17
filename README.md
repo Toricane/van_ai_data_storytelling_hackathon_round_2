@@ -146,4 +146,4 @@ The scripts must be run in the correct order.
 
 ### 6. View the Results
 
-After the final script finishes running, navigate to the `tsne_visualizations_3d_silhouette_focus_sized/` directory and open the `index.html` file in your web browser to see the master dashboard.
+After the final script finishes running, the `tsne_visualizations_3d_silhouette_focus_sized/` directory now contains all of the regenerated HTML files. Open the `index.html` file in your web browser to see the master dashboard.
