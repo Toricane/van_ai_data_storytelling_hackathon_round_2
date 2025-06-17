@@ -7,6 +7,7 @@
 > You decide how to make the data speak—whether through dynamic visualizations, compelling storytelling, performative media, or unconventional experimentation.
 
 View my project here: https://prajwal.is-a.dev/van_ai_data_storytelling_hackathon_round_2/
+
 Demo video: [to be added]
 
 > [!NOTE]
