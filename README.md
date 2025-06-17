@@ -2,16 +2,18 @@
 
 > 1,000 Canadians shared their thoughts on the state of the country and its future. The data is raw, real, and full of tension, nuance, and insight.
 
-> Using a custom dataset gathered with RIVAL’s market research tech, your mission is to transform raw numbers into an experience that’s interactive, visual, or narrative-driven.
+> Using a [custom dataset](https://canada.bc-ai.net/) gathered with RIVAL’s market research tech, your mission is to transform raw numbers into an experience that’s interactive, visual, or narrative-driven.
 
 > You decide how to make the data speak—whether through dynamic visualizations, compelling storytelling, performative media, or unconventional experimentation.
 
 View my project here: https://prajwal.is-a.dev/van_ai_data_storytelling_hackathon_round_2/
 
-Demo video: [to be added]
-
 > [!NOTE]
 > The visuals may take a minute to fully load.
+
+Demo video:
+
+[![Watch the demo video](https://img.youtube.com/vi/a6kd128q9Bg/maxresdefault.jpg)](https://www.youtube.com/watch?v=a6kd128q9Bg)
 
 ## Pitch
 
@@ -132,7 +134,7 @@ This project requires an OpenAI API key to generate embeddings.
 The scripts must be run in the correct order.
 
 1.  **Generate Embeddings**: Run `embeddings_of_data.py` first. This will process the raw survey data, call the OpenAI API, and create the `hackathon_data_with_embeddings.csv` file.
-    _This step will incur costs on your OpenAI account and may take a significant amount of time._
+    _This step will incur costs (1 cent) on your OpenAI account and may take some time._
 
     ```bash
     python embeddings_of_data.py
